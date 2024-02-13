@@ -112,12 +112,12 @@ header {
 .trait {
   display: grid;
   grid-template-rows: 10% 10% 10% 10% 10% 10%;
-  margin-left: 4rem;
-  margin-top: 3rem;
+  margin-left: 1rem;
+  margin-top: 18rem;
   color: #2071e7;
   border-left: 1px #333 solid;
   padding-left: 3rem;
-  height: 15rem;
+  height: 13rem;
   .title {
     font-size: 1.4rem;
     color: #333;
@@ -129,18 +129,17 @@ header {
   }
 }
 .futur {
-  margin-top: 1rem;
+  margin-top: 34rem;
+  padding-right: 50rem;
   h4 {
     font-size: 1.5rem;
     border: solid #333 1px;
     margin: auto;
-    padding-left: 33%;
     margin-bottom: 1rem;
   }
   .personne {
     font-size: 1rem;
     font-family: cursive;
-    margin-left: 1rem;
     margin-bottom: 2rem;
   }
 }
