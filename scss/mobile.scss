@@ -75,6 +75,7 @@ header {
   }
 }
 .bas {
+  display: inline;
   .spe {
     margin-top: 2.5rem;
     margin-left: 2.5rem;
@@ -90,8 +91,6 @@ header {
     margin-bottom: 1.5rem;
     margin-top: 0.5rem;
     letter-spacing: 2.5px;
-    display: flex;
-    justify-content: center;
   }
   .li {
     margin-left: 1rem;
@@ -113,7 +112,7 @@ header {
   display: grid;
   grid-template-rows: 10% 10% 10% 10% 10% 10%;
   margin-left: 1rem;
-  margin-top: 18rem;
+  margin-top: 2rem;
   color: #2071e7;
   border-left: 1px #333 solid;
   padding-left: 3rem;
@@ -128,16 +127,18 @@ header {
     color: #7f8c8d;
   }
 }
+
 .futur {
-  margin-top: 34rem;
-  padding-right: 50rem;
+  margin-top: 2rem;
+  margin-left: 0;
+
   h4 {
     font-size: 1.5rem;
-    border: solid #333 1px;
-    margin: auto;
     margin-bottom: 1rem;
+    margin-right: 8rem;
   }
   .personne {
+    margin-left: 2rem;
     font-size: 1rem;
     font-family: cursive;
     margin-bottom: 2rem;

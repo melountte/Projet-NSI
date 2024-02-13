@@ -77,6 +77,9 @@ header .border:hover {
   height: 7rem;
 }
 
+.bas {
+  display: inline;
+}
 .bas .spe {
   margin-top: 2.5rem;
   margin-left: 2.5rem;
@@ -92,8 +95,6 @@ header .border:hover {
   margin-bottom: 1.5rem;
   margin-top: 0.5rem;
   letter-spacing: 2.5px;
-  display: flex;
-  justify-content: center;
 }
 .bas .li {
   margin-left: 1rem;
@@ -115,7 +116,7 @@ header .border:hover {
   display: grid;
   grid-template-rows: 10% 10% 10% 10% 10% 10%;
   margin-left: 1rem;
-  margin-top: 18rem;
+  margin-top: 2rem;
   color: #2071e7;
   border-left: 1px #333 solid;
   padding-left: 3rem;
@@ -132,16 +133,16 @@ header .border:hover {
 }
 
 .futur {
-  margin-top: 34rem;
-  padding-right: 50rem;
+  margin-top: 2rem;
+  margin-left: 0;
 }
 .futur h4 {
   font-size: 1.5rem;
-  border: solid #333 1px;
-  margin: auto;
   margin-bottom: 1rem;
+  margin-right: 8rem;
 }
 .futur .personne {
+  margin-left: 2rem;
   font-size: 1rem;
   font-family: cursive;
   margin-bottom: 2rem;
