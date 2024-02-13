@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+header {
+  background-color: #333;
+  display: flex;
+  justify-content: space-around;
+  height: 3.5rem;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  color: white;
+}
+header .img1 {
+  height: 30px;
+  margin-right: 1rem;
+}
+header .stat {
+  color: white;
+  margin-bottom: 3rem;
+}
+header .border {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.1rem;
+  font-size: 0.9rem;
+  padding-top: 0.2rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: white solid 3px;
+}
+header .border:hover {
+  border: rgb(178, 155, 155) solid 3px;
+}
+
+.fond {
+  display: grid;
+  grid-template-columns: 1fr 60%;
+  background: linear-gradient(to right, #2071e7, #00c3ff);
+  box-shadow: #333 1rem 0.2rem 2rem;
+}
+.fond h2 {
+  letter-spacing: 0.8rem;
+  color: white;
+  padding-top: 5rem;
+  font-size: 2.5rem;
+}
+.fond h2 span {
+  display: inline-block;
+  animation: bounce 2s;
+}
+.fond .eleve {
+  color: white;
+  margin-left: 18%;
+  margin-top: 1rem;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+.fond .first {
+  width: 25rem;
+  background-color: aliceblue;
+  border-right: #333 solid 0.5rem;
+}
+.fond .first .rond {
+  border-radius: 20rem;
+  margin-left: 7rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 10rem;
+}
+
+.bas {
+  display: grid;
+  grid-template-columns: 28% 20% 1fr;
+}
+.bas .spe {
+  margin-top: 2.5rem;
+  margin-left: 4rem;
+  border: #333 1.5px solid;
+  border-radius: 40px;
+  box-shadow: gray 1rem 1rem 1rem;
+  border-right: 1px solid var(--border);
+  margin-bottom: auto;
+}
+.bas .titre {
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+  letter-spacing: 2.5px;
+  display: flex;
+  justify-content: center;
+}
+.bas .li {
+  margin-left: 1rem;
+  letter-spacing: 0.2px;
+}
+.bas .li .l1,
+.bas .li .l2 {
+  margin-bottom: 0.5rem;
+}
+.bas .icon {
+  height: 70px;
+}
+.bas .icon1 {
+  height: 70px;
+  margin-left: 1.5rem;
+}
+
+.trait {
+  display: grid;
+  grid-template-rows: 10% 10% 10% 10% 10% 10%;
+  margin-left: 4rem;
+  margin-top: 1rem;
+  color: #2071e7;
+  border-left: 1px #333 solid;
+  padding-left: 3rem;
+  height: 15rem;
+}
+.trait .title {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 4rem;
+  letter-spacing: 0.2rem;
+}
+.trait .level {
+  color: #7f8c8d;
+}
+
+.futur {
+  margin-left: 2rem;
+  margin-top: 4rem;
+}
+.futur h4 {
+  margin-left: 4rem;
+  margin-right: 7rem;
+  padding-left: 10rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  padding: auto;
+  font-family: system-ui;
+  border-radius: 3rem;
+  border: #333 1.5px solid;
+  box-shadow: silver 1rem -1rem 1rem;
+}
+.futur .personne {
+  font-size: 1.1rem;
+  font-family: cursive;
+  margin-right: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
