@@ -136,6 +136,7 @@ header .border:hover {
 .futur {
   margin-left: 5vh;
   margin-top: 5vh;
+  margin-bottom: 1.5rem;
 }
 .futur h4 {
   margin-left: 4rem;
@@ -154,7 +155,6 @@ header .border:hover {
   font-size: 1.1rem;
   font-family: cursive;
   margin-right: 1rem;
-  margin-bottom: 5%;
 }
 .futur .lien {
   text-decoration: dashed;
@@ -163,7 +163,6 @@ header .border:hover {
   padding: 0.5rem;
   border-radius: 2rem;
   background-color: #333;
-  margin-bottom: 5%;
   color: aliceblue;
 }
 .futur .lien:hover {
