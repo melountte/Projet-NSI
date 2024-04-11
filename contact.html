@@ -11,23 +11,27 @@
     <a><strong>MON CV EN LIGNE</strong></a>
     <a href="/index.html" class="border">ACCUEIL</a>
     <a href="/contact.html" class="border">ME CONTACTER</a>
+    <script src="https://www.paypal.com/sdk/js?client-id=AZuXlUeD7KEOWJLyOWZJtrJKbbth1PbzRMG9y23FBOGRkdfT7o3Ij2hlkpkCq2ukmdhodCKUG__dZiVI"></script>
+    <link rel="stylesheet" href="/app.js" />
   </header>
   <body>
     <div class="container">
       <div class="two">
         <div class="info">
           <h5 class="tt">INFORMATIONS</h5>
-          <h6 class="under">TELEPHONE</h6>
-          <p class="p">06 37 41 65 07</p>
-          <h6 class="under">COURIEL</h6>
-          <p class="p">classenmelina@gmail.com</p>
-          <div class="reseaux1">
-            <img class="logo" src="/img/insta.png" alt="" />
-            <p class="txt_lg">m.e.l_sfx</p>
-          </div>
-          <div class="reseaux1">
-            <img class="logo" src="/img/snap.png" alt="" />
-            <p class="txt_lg">melina_classen</p>
+          <div class="grp">
+            <h6 class="under">TELEPHONE</h6>
+            <p class="p">06 37 41 65 07</p>
+            <h6 class="under">COURIEL</h6>
+            <p class="p">classenmelina@gmail.com</p>
+            <div class="reseaux1">
+              <img class="logo" src="/img/insta.png" alt="" />
+              <p class="txt_lg">m.e.l_sfx</p>
+            </div>
+            <div class="reseaux1">
+              <img class="logo" src="/img/snap.png" alt="" />
+              <p class="txt_lg">melina_classen</p>
+            </div>
           </div>
           <div class="hc">
             <img class="html" src="/img/html.png" alt="" />
@@ -46,6 +50,7 @@
               id="message"
             />
             <div>
+              <div class="paypal" id="paypal-button-container"></div>
               <button>Soumettre</button>
             </div>
           </form>
@@ -53,4 +58,31 @@
       </div>
     </div>
   </body>
+  <!-- java script ! -->
+  <script>
+    paypal
+      .Buttons({
+        createOrder: function (data, actions) {
+          return actions.order.create({
+            purchase_units: [
+              {
+                amount: {
+                  value: "5.99",
+                },
+              },
+            ],
+          });
+        },
+        onApprove: function (data, actions) {
+          return action.order.capture().then(function (details) {
+            alert("Transaction OK :" + details.payer.name.given_name);
+          });
+        },
+        onError: function (err) {
+          console.error("Payement Error :", err);
+          alert("Payement échoué !");
+        },
+      })
+      .render("#paypal-button-container");
+  </script>
 </html>

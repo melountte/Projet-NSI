@@ -1,3 +1,14 @@
+header {
+  background-color: #333;
+  display: flex;
+  justify-content: space-around;
+  height: 3.5rem;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  color: white;
+}
+
 .container {
   padding: 0rem;
 }
@@ -8,17 +19,23 @@
 }
 .container .two .info {
   background: linear-gradient(to right, #2071e7, #00c3ff);
-  padding-top: 2.7rem;
   border-right: #333 solid 2px;
-  padding-left: 4rem;
+  height: 100vh;
+  width: 50vh;
+}
+.container .two .info h5 {
+  padding-top: 1rem;
+  margin-top: 2rem;
 }
 .container .two .info .tt {
-  margin-left: 1.3rem;
+  margin-left: 5vh;
   margin-bottom: 3rem;
   font-size: 1.3rem;
   letter-spacing: 0.3rem;
-  margin-right: 4rem;
   text-decoration: overline;
+}
+.container .two .info .grp {
+  margin: 5vh;
 }
 .container .two .info .under {
   margin-top: 2rem;
@@ -32,7 +49,7 @@
 }
 .container .two .info .reseaux1 {
   display: grid;
-  grid-template-columns: 20% 1fr;
+  grid-template-columns: 9.2vh 1fr;
 }
 .container .two .info .reseaux1 .logo {
   height: 70px;
@@ -51,14 +68,14 @@
   margin-left: 4.2rem;
 }
 .container .two .contact {
-  padding: 3rem 1rem;
   display: flex;
+  margin-top: 10vh;
   flex-direction: column;
   align-items: center;
 }
 .container .two .conta {
   color: #333;
-  padding-left: 7rem;
+  margin-left: 23vh;
   padding-bottom: 1rem;
 }
 .container .two .conta strong {
@@ -82,7 +99,7 @@
 }
 .container .two .contact-form button {
   display: block;
-  margin: 2rem auto;
+  margin-left: 25vh;
   padding: 1rem 2rem;
   border: 0;
   border-radius: 30px;
