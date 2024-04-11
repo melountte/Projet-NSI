@@ -17,6 +17,7 @@
     />
   </head>
   <body>
+   
     
       <header>
         <a><strong>MON CV EN LIGNE</strong></a>
@@ -79,6 +80,20 @@
             informatique. J'envisage par la suite des études à l'étranger.
           </p>
           <a target="_blank" class="lien" href="/img/Certification.jpg">Certification</a>
+<audio id="certification-audio" controls style="display: none;">
+  <source src="/img/IMG_2372.mp3" type="audio/mpeg">
+  Votre navigateur ne prend pas en charge l'élément audio.
+</audio>
+          <script>
+            // Récupérez l'élément audio et le lien "Certification"
+const certificationAudio = document.getElementById('certification-audio');
+const certificationLink = document.querySelector('.lien[href="/img/Certification.jpg"]');
+
+// Ajoutez l'événement click sur le lien
+certificationLink.addEventListener('click', () => {
+  certificationAudio.play();
+});
+          </script>
         </div>
       </div>
     </div>
